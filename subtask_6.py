@@ -6,8 +6,11 @@ while True:
     match user_list:
         case 1:
             while True:
-                number = input("Please enter a number or 'end' to sort the numbers: ")
-                if number.isnumeric():
+                number = int(input("Please enter a number or 'end' to sort the numbers: "))
+                if number == 00:
+                    print(list_of_numbers)
+
+                elif number == int(number):
                     list_of_numbers.append(number)
                     for i in list_of_numbers:
                         a = 0
@@ -16,11 +19,9 @@ while True:
                             a = b
                             list_of_numbers[a], list_of_numbers[b] = list_of_numbers[b], list_of_numbers[a]
 
-                elif number == "end":
-                    print(list_of_numbers)
-
                 else:
                     print("Invalid input")
+
 
         ##case 11:
 

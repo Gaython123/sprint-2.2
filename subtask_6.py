@@ -16,7 +16,7 @@ while True:
             start_selection(numbers_selection, len(numbers_selection))
 
         case "3":
-            start_bubble(numbers_insertion)
+            start_insertion(numbers_insertion)
 
         case "0":
             break

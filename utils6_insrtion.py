@@ -1,7 +1,3 @@
-
-
-array = [1, 8, 4, 10, -7, -9, -5, 120, -9, -120, 0, 46]
-print(array)
 def insertion_sort_increasing(array):
     for step in range(1, len(array)):
         key = array[step]
@@ -15,7 +11,7 @@ def insertion_sort_increasing(array):
 
         # Place key at after the element just smaller than it.
         array[j + 1] = key
-print(array)
+    print(array)
 
 def insertion_sort_decreasing(array):
     for step in range(1, len(array)):
@@ -30,7 +26,7 @@ def insertion_sort_decreasing(array):
 
         # Place key at after the element just smaller than it.
         array[j + 1] = key
-print(array)
+    print(array)
 
 def start_insertion(array):
     while True:

@@ -1,4 +1,3 @@
-array = [7, 4, 2, -8, -4, -400, 10000, 240, -600, -920]
 def selection_sort_increasing(array, size):
     for step in range(size):
         min_idx = step
@@ -10,8 +9,6 @@ def selection_sort_increasing(array, size):
         # put min at the correct position
         (array[step], array[min_idx]) = (array[min_idx], array[step])
     print(f"Sorted list is {array}")
-
-selection_sort_increasing(array, len(array))
 
 def selection_sort_decreasing(array, size):
     for step in range(size):
@@ -25,14 +22,12 @@ def selection_sort_decreasing(array, size):
         (array[step], array[min_idx]) = (array[min_idx], array[step])
     print(f"Sorted list is {array}")
 
-selection_sort_decreasing(array, len(array))
-
-def start_selection(list_of_numbers, size):
+def start_selection(array, size):
     while True:
         number = input("Add a number or 'end' to sort the numbers: ")
 
         if number == "end":
-            if len(list_of_numbers) == 0:
+            if len(array) == 0:
                 print("The list is empty")
 
             else:
@@ -46,7 +41,7 @@ def start_selection(list_of_numbers, size):
                         selection_sort_decreasing(array, len(array))
 
         elif number.isdigit() or number.lstrip("-").isdigit():
-            list_of_numbers.append(number)
+            array.append(number)
 
         else:
             print("Invalid input")

@@ -8,7 +8,7 @@ def selection_sort_increasing(array, size):
                 min_idx = i
         # put min at the correct position
         (array[step], array[min_idx]) = (array[min_idx], array[step])
-    print(f"Sorted list is {array}")
+        print(f"Sorted list is {array}")
 
 def selection_sort_decreasing(array, size):
     for step in range(size):
@@ -20,7 +20,7 @@ def selection_sort_decreasing(array, size):
                 min_idx = i
         # put min at the correct position
         (array[step], array[min_idx]) = (array[min_idx], array[step])
-    print(f"Sorted list is {array}")
+        print(f"Sorted list is {array}")
 
 def start_selection(array, size):
     while True:

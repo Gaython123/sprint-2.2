@@ -5,7 +5,7 @@ def bubble_sort_decreasing(list_of_numbers):
         for j in range(len(list_of_numbers)):
             if list_of_numbers[i] > list_of_numbers[j]: #decreasing
                 list_of_numbers[i], list_of_numbers[j] = list_of_numbers[j], list_of_numbers[i]
-    print(f"Sorted list is {list_of_numbers}")
+                print(f"Sorted list is {list_of_numbers}")
 
 def bubble_sort_increasing(list_of_numbers):
     print(f"\nUnsorted list is {list_of_numbers}")
@@ -13,7 +13,7 @@ def bubble_sort_increasing(list_of_numbers):
         for j in range(len(list_of_numbers)):
             if list_of_numbers[i] < list_of_numbers[j]: #decreasing
                 list_of_numbers[i], list_of_numbers[j] = list_of_numbers[j], list_of_numbers[i]
-    print(f"Sorted list is {list_of_numbers}")
+                print(f"Sorted list is {list_of_numbers}")
 
 def start_bubble(list_of_numbers):
     while True:

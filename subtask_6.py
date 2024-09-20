@@ -21,9 +21,13 @@ while True:
                                 print(f"\nUnsorted list is {list_of_numbers}")
                                 for i in range(len(list_of_numbers)):
                                     for j in range(len(list_of_numbers)):
-                                        if list_of_numbers[i] < list_of_numbers[j]:
-                                            list_of_numbers[i], list_of_numbers[j] = list_of_numbers[j], list_of_numbers[i]
-                                print(f"Sorted list is {list_of_numbers}\n")
+                                        if i and j >= 0:
+                                            if list_of_numbers[i] < list_of_numbers[j]:
+                                                list_of_numbers[i], list_of_numbers[j] = list_of_numbers[j], list_of_numbers[i]
+                                        else:
+                                            if list_of_numbers[i] > list_of_numbers[j]:
+                                                list_of_numbers[i], list_of_numbers[j] = list_of_numbers[j], list_of_numbers[i]
+                                    print(f"Sorted list is {list_of_numbers}\n")
 
                             case "2":
                                 print(f"\nUnsorted list is {list_of_numbers}")

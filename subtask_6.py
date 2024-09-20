@@ -14,6 +14,8 @@ while True:
         case "2":
             start_selection(numbers_selection, len(numbers_selection))
 
+        case "3":
+            
 
 
 

@@ -34,33 +34,38 @@ def bubble_sort_increasing(list_of_numbers):
                 list_of_numbers[i], list_of_numbers[j] = list_of_numbers[j], list_of_numbers[i]
                 print(f"Sorted list is {list_of_numbers}")
 
-def start_bubble(list_of_numbers):
-    """
 
+
+choice = input("Please:"
+               " '1' for Ascending order"
+               " '2' for Descending order")
+number = input("Please enter a number or 'end' to sort the numbers: ")
+def start_bubble(list_of_numbers, choice):
+    """
     Parameters
     ----------
-    list_of_numbers
+    list_of_numbers - list of numbers to sort
+    choice - user chooses to sort:
+     from 'min to max'
+     from 'max to min'
 
-    Returns
+    Returns sorted list of number in "Ascending" or "Descending" order
     -------
-
     """
-    while True:
-        number = input("Please enter a number or 'end' to sort the numbers: ")
 
+    while True:
         if number == "end":
             if len(list_of_numbers) == 0:
                 print("The list is empty")
 
-            else:
-                sort_choice = input(
-                    "Enter '1' or '2' to sort from: \n1. 'min' to 'max' (increasing)\n2. 'max' to 'min' (decreasing)")
-                match sort_choice:
-                    case "1":
-                        bubble_sort_increasing(list_of_numbers)
+            elif choice == "1":
+               bubble_sort_increasing(list_of_numbers)
 
-                    case "2":
-                        bubble_sort_decreasing(list_of_numbers)
+            elif choice == "2":
+                bubble_sort_decreasing(list_of_numbers)
+
+            else:
+                print("Invalid choice")
 
         elif number.isdigit() or number.lstrip("-").isdigit():
             list_of_numbers.append(number)

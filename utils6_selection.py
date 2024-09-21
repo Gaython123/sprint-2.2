@@ -1,4 +1,15 @@
 def selection_sort_increasing(array, size):
+    """
+
+    Parameters
+    ----------
+    array - numbers to sort
+    size - the length of the array
+
+    Returns - sorted array in 'Ascending order'
+    -------
+
+    """
     for step in range(size):
         min_idx = step
         for i in range(step + 1, size):
@@ -11,6 +22,17 @@ def selection_sort_increasing(array, size):
         print(f"Sorted list is {array}")
 
 def selection_sort_decreasing(array, size):
+    """
+
+      Parameters
+      ----------
+      array - numbers to sort
+      size - the length of the array
+
+      Returns - sorted array in 'Descending' order
+      -------
+
+      """
     for step in range(size):
         min_idx = step
         for i in range(step + 1, size):

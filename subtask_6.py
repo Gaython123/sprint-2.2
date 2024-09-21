@@ -9,7 +9,8 @@ numbers_insertion = []
 menu()
 
 while True:
-    user_list = input("choose option: '(1-3) for 'sort',"
+    user_list = input("choose option: "
+                      "'(1-3) for 'sort',"
                       "'help' to see the options and "
                       "'0' for exit'")
 

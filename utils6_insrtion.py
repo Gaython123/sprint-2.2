@@ -1,4 +1,16 @@
 def insertion_sort_increasing(array):
+    """
+
+    Parameters
+    ----------
+    array - list of numbers to sort
+
+    Returns - sorted list in 'Ascending' order
+    -------
+
+    """
+    print(insertion_sort_increasing.__doc__)
+
     for step in range(1, len(array)):
         key = array[step]
         j = step - 1
@@ -14,6 +26,18 @@ def insertion_sort_increasing(array):
         print(array)
 
 def insertion_sort_decreasing(array):
+    """
+
+        Parameters
+        ----------
+        array - list of numbers to sort
+
+        Returns - sorted list in 'Descending' order
+        -------
+
+        """
+    print(insertion_sort_decreasing.__doc__)
+
     for step in range(1, len(array)):
         key = array[step]
         j = step - 1
